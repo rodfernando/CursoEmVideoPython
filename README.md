@@ -1,1 +1,5 @@
 # CursoEmVideoPython
+
+## Desafios
+## pythonExercicios
+## pythonTestes
