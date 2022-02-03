@@ -9,9 +9,16 @@ print('''Escolha uma das bases para conversão:
 [ 2 ] converter para OCTAL
 [ 3 ] converter para HEXADECIMAL''')
 opcao = int(input('Sua opção: '))
+
+while not(opcao == 1 or opcao == 2 or opcao == 3):
+    print('Opção inválida. Tente novamente.')
+    opcao = int(input('Sua opção: '))
+
+print('-' * 50)
 if opcao == 1:
-    print('A conversão do número {} para binário é {:2}'.format(numero, bin(numero)[2:])) # não quero os dois primeiros dígitos, ou seja, começo da posição 2 e vou até o final
+    print('A conversão do número {} para binário é {:2}'.format(numero, bin(numero)[2:]))  # não quero os dois primeiros dígitos, ou seja, começo da posição 2 e vou até o final
 elif opcao == 2:
     print('A conversão do número {} para octal é {}'.format(numero, oct(numero)[2:]))
-else:
+elif opcao == 3:
     print('A conversão do número {} para hexadecimal é {:2}'.format(numero, hex(numero)[2:]))
+print('-' * 50)
