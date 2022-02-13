@@ -1,4 +1,5 @@
 # Estrutura condicional aninhada simples
+
 # Posso ter diversos elif, ou nenhum else.
 
 nome = str(input('Qual o seu nome? '))
