@@ -9,24 +9,28 @@ idadeAnterior = 0
 somatorioIdade = 0
 nomeVelho = ''
 contMulher = 0
-for i in range(0, 2):
-    nome = str(input('Digite o nome da {}ª pessoa: '.format(i + 1)))
-    idade = int(input('Digite a idade da {}ª pessoa: '.format(i + 1)))
-    sexo = str(input('Digite o sexo da {}ª pessoa (M/F): '.format(i + 1)))
+for i in range(1, 6):
+    nome = str(input('Digite o nome da {}ª pessoa: '.format(i)))
+    idade = int(input('Digite a idade da {}ª pessoa: '.format(i)))
+    sexo = str(input('Digite o sexo da {}ª pessoa (M/F): '.format(i)))
     somatorioIdade += idade
-    if idade > idadeAnterior and sexo == 'M' or sexo == 'm':
+    if idade > idadeAnterior and (sexo == 'M' or sexo == 'm'):
         idadeMax = idade
         nomeVelho = nome
-    elif idade < 20 and sexo == 'F' or sexo == 'f':
+    if idade < 20 and (sexo == 'F' or sexo == 'f'):
         contMulher += 1
     idadeAnterior = idade
+    print('-' * 40)
 
+print('-' * 40)
 # média de idade do grupo:
 media = float(somatorioIdade / i)
-print('A média de idade das pessoas é {:.1f}Kg'.format(media))
+print('A média de idade das pessoas é {:.1f} anos'.format(media))
 
 # nome do mais velho
-print('O nome do mais velho é {}.'.format(nomeVelho))
+print('O nome do homem mais velho é {}, com {} anos'.format(nomeVelho, idadeMax))
 
 # Quantas mulheres têm menos de 20 anos
 print('Temos {} mulher(es) com menos de 20 anos'.format(contMulher))
+
+print('-' * 40)
