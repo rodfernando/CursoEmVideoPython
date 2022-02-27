@@ -15,3 +15,4 @@ while n != 'S':
             fem += 1
     n = str(input('Deseja encerrar a execução? [S/N]')).upper()
 print('Temos {} homem(ns) e {} mulher(es)'.format(masc, fem))
+
