@@ -17,6 +17,19 @@ while opção != 5:
     [4]novos números
     [5]sair do programa''')
     opção = int(input(''))
-print('Fim do programa')
-
-
+    if opção == 1:
+        print('Soma: {} + {} = {}'.format(n1, n2, n1 + n2))
+    elif opção == 2:
+        print('Multiplicação: {} * {} = {}'.format(n1, n2, n1 * n2))
+    elif opção == 3:
+        if n1 > n2:
+            print('{} é o maior número.'.format(n1))
+        else:
+            print('{} é o maior número.'.format(n2))
+    elif opção == 4:
+        print('Informe novamente os números: ')
+        n1 = int(input('Digite o primeiro número: '))
+        n2 = int(input('Digite o segundo número: '))
+    else:
+        print('Opção inválida. Tente novamente!')
+print('Fim do programa!')

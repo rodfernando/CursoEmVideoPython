@@ -19,6 +19,7 @@ while numeroDaSorte != numeroSorteio:
     sleep(1)
     numeroSorteio = random.randint(0, 10)
 if numeroDaSorte == numeroSorteio:
+    print('O número sorteado é {}.'.format(numeroSorteio))
     print('Parabéns! Você acertou!')
     cont += 1
 
