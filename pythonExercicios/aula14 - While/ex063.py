@@ -2,6 +2,10 @@
 primeiros elementos de uma Sequência de Fibonacci
 fórmula -> Fn = Fn-1 + Fn-2'''
 
+print('=' * 30)
+print('     SEQUÊNCIA DE FIBONACCI')
+print('=' * 30)
+
 termo = int(input('Digite a quantidade de termos: '))
 f1 = 0
 f2 = 1
