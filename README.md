@@ -1,5 +1,7 @@
 # CursoEmVideoPython
 
-## Desafios
+## pythonAulas
+Aulas contendo as aulas do curso de python de Gustavo Guanabara
+
 ## pythonExercicios
-## pythonTestes
+Exercícios dos **desafios** propostos
